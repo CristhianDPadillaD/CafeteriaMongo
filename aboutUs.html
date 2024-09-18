@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>Nosotros</title>
-  <link href ="nav.html">
+  <link href="nav.html">
 </head>
 
 <body>
-    <div id="navbar-container"></div>
+  <div id="navbar-container"></div>
 
-<h1 class="text-center">Nosotros</h1>
+  <header>
+    <h1>Quiénes Somos</h1>
+  </header>
+
+  <section>
+    <div class="cajatexto">
+      <h2>Sobre nosotros</h2>
+      <p>Somos la cafeteria de la Universidad Mariana, tenemos tres sedes distribuidas a lo largo de las instalaciones de 
+        la universidad y presentamos una gran variedad de productos para la comunidad.</p>
+        <div class="imagenes"><img src="https://encolombia.com/wp-content/uploads/2012/12/cafeteria-1.jpg"></div>
+    </div>    
+    
+    <div class="cajatexto">
+      <h2>Nuestra Misión</h2>
+      <p>Buscamos ofrecer la mejor atencion para estudiantes, profesores y personal administrativo, asi como todos los
+        productos distribuidos son preparados con la mejor calidad.</p>
+        <div class="imagenes"><img src="https://www.sargento.com/assets/Uploads/Recipe/Image/Sargento11501__FillWzExNzAsNTgzXQ.jpg"></div>
+    </div>
+    
+    <div class="cajatexto">
+      <h2>Nuestro Equipo</h2>
+      <p>Contamos con un equipo diverso de profesionales altamente capacitados para la preparacion de alimentos, asi como 
+        personal capacitado para manejar los ingresos que genera la cafeteria.</p>
+        <div class="imagenes"><img src="https://www.nestleprofessional-latam.com/sites/default/files/styles/np_article_big/public/2024-04/todo-necesario-abrir-cafeteria-mesera.jpg?itok=D6E7MFoW"></div>
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>© 2024 Nuestra Empresa | Todos los derechos reservados</p>
+  </footer>
 
 
   </div>
-</div>
+  </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1Yz6Btw5ySU6sdeZ/3paaI5iPY4b7C8CgoIF0yZhHbM1" crossorigin="anonymous"></script>
-<script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1Yz6Btw5ySU6sdeZ/3paaI5iPY4b7C8CgoIF0yZhHbM1"
+    crossorigin="anonymous"></script>
+  <script>
     fetch('nav.html')
       .then(response => response.text())
       .then(data => {
@@ -26,6 +61,7 @@
       })
       .catch(error => console.error('Error loading navbar:', error));
   </script>
-  
+
 </body>
+
 </html>
