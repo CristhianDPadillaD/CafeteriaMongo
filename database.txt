@@ -62,8 +62,10 @@ db.clientes.insertMany([
 //db.clientes.find({$and:[{cantidad:{$eq:3}}, {precio:{$lte:10000}}]}) //compras de 3 productos menores a 10000
 //db.clientes.find({$and:[{cantidad:{$eq:4}}, {precio:{$gte:10000}}]}) //compras de 4 productos mayores a 10000
 //db.clientes.find({$and:[{cantidad:{$eq:2}}, {precio:{$gte:5000}}]}) //compras de 2 productos menores a 5000
+
 //db.clientes.find({$and:[{precio:{$gte:6000}}, {cantidad:{$gte:2}}]}) //compras mayores a 6 y que compraron mas de 2 productos
 //db.clientes.find({$and:[{precio:{$lte:6000}}, {cantidad:{$gte:3}}]}) //compras menores a 6 y que compraron mas de 2 productos
+
 //db.clientes.find({$and:[{cantidad:{$gte:3}}, {genero:{$ne:"M"}}]}) //compraron mas de 3 productos Y que sean mujeres
 //db.clientes.find({$and:[{cantidad:{$lte:3}}, {genero:{$ne:"F"}}]}) //compraron menos de 3 productos Y que sean hombres
 //db.clientes.find({$and:[{precio:{$lte:10000}}, {genero:{$ne:"M"}}]}) //compraron menos de 10000 en productos Y que sean mujeres

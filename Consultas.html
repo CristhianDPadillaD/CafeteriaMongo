@@ -18,24 +18,88 @@
   <header>
     <h1>Consultas MongoDB</h1>
   </header>
+  <section>
+ 
+    <div class="cajatexto">
+      <h2>Primera, Segunda, Tercer y Cuarta Consulta</h2>
+      <p>Esta consulta se utiliza para conocer cuantas veces se compraron respectivamente un solo, dos, tres, cuatro o más productos.</p>
+        <div class="capturas"><img src="Capturas db/Captura.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura1.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura2.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura3.PNG"></div>
+    </div> 
+    <div class="cajatexto">
+      <h2>Quinta Consulta</h2>
+      <p>Queremos saber cuantas personas compraron nuestro producto principal el cual es el sandwich de pollo picante.</p>
+        <div class="capturas"><img src="Capturas db/Captura4.PNG"></div>
+    </div> 
+    <div class="cajatexto">
+      <h2>Sexta Consulta</h2>
+      <p>Para conocer cuales fueron las compras de mayor valor donde se superaron los $10.000</p>
+        <div class="capturas"><img src="Capturas db/Captura5.PNG"></div>
+    </div> 
+    <div class="cajatexto">
+      <h2>Septima Consulta</h2>
+      <p>Para conocer las menores compras que estuvieron por debajo de $5.000 .</p>
+        <div class="capturas"><img src="Capturas db/Captura6.PNG"></div>
+    </div> 
+
+    <div class="cajatexto">
+      <h2>Octava, Novena, Decima Consulta</h2>
+      <p>Con la finalidad de conocer las compras de 3 y 4 productos mayores a $10.000 y tambien para conocer las compras de 2 productos menores a $5.000.</p>
+        <div class="capturas"><img src="Capturas db/Captura7.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura8.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura9.PNG"></div>
+    </div> 
+
+    <div class="cajatexto">
+      <h2>Undécima y Duodécima Consulta</h2>
+      <p>Para conocer las compras mayores a $6.000 con 2 productos y menores a $6.000 con 3 productos.</p>
+        <div class="capturas"><img src="Capturas db/Captura10.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura11.PNG"></div>
+    </div> 
+    <div class="cajatexto">
+      <h2>Decimotercera y Decimocuarta Consulta</h2>
+      <p>Esta consulta es con la finalidad de conocer cuantas mujeres compraron mas de 3 productos y cuantos hombres compraron menos de 3 productos </p>
+        <div class="capturas"><img src="Capturas db/Captura12.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura13.PNG"></div>
+    </div> 
+    <div class="cajatexto">
+      <h2>Decimoquinta, Decimosexta, Decimoseptima y Decimoctava Consulta</h2>
+      <p>Con esta consulta las compras realizadas por hombres y mujeres menores a $10.000 y compras realizadas menores a $10.000 entre estos mismos.</p>
+        <div class="capturas"><img src="Capturas db/Captura14.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura15.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura16.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura17.PNG"></div>
+    </div> 
+    <div class="cajatexto">
+      <h2>Decimonovena y Vigésima Consulta</h2>
+      <p>Esta consulta nos ayuda a saber cuantas de las ventas realizadas fueron a hombres y a mujeres respectivamente.</p>
+        <div class="capturas"><img src="Capturas db/Captura18.PNG"></div>
+        <div class="capturas"><img src="Capturas db/Captura19.PNG"></div>
+    </div> 
+   
+    
+  </section>
 
   </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1Yz6Btw5ySU6sdeZ/3paaI5iPY4b7C8CgoIF0yZhHbM1"
-    crossorigin="anonymous"></script>
-  <script>
-    fetch('nav.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading navbar:', error));
-  </script>
 
 </body>
 <footer>
   <p>© 2024 Nuestra Empresa | Todos los derechos reservados</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1Yz6Btw5ySU6sdeZ/3paaI5iPY4b7C8CgoIF0yZhHbM1"
+crossorigin="anonymous"></script>
+<script>
+fetch('nav.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar-container').innerHTML = data;
+  })
+  .catch(error => console.error('Error loading navbar:', error));
+</script>
+
 </html>

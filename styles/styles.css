@@ -41,6 +41,10 @@ img{
 .imagenes{
     text-align: center;
 }
+.capturas{
+    align-content: left;
+    margin-bottom: 5px;
+}
 
 .cajatexto{
     padding: 50px;
@@ -60,5 +64,5 @@ box-shadow: 0px 18px 22px -6px rgba(0,0,0,0.75);
 }
 
 .navbar {
-    background-color: #6F4E37; /* Marrón oscuro */
+    background-color: rgb(61, 2, 77); /* Marrón oscuro */
 }
