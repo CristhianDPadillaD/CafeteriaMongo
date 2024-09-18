@@ -1,64 +1,74 @@
-db.estudiantes.insertMany([
-  const baseDatos = [
-    { id: 1, nombre: 'Sofía', precio: 3000, producto: 'empanada'},
-    { id: 2, nombre: 'Mateo', precio: 5000, producto: 'sandwich de pollo'},
-    { id: 3, nombre: 'Valentina', precio: 2000, producto: 'papas margarita'},
-    { id: 4, nombre: 'Santiago', precio: 5500, producto: 'sandwich de pollo picante'},
-    { id: 5, nombre: 'Camila', precio: 3000, producto: 'jugo hit'},
-    { id: 6, nombre: 'Sebastián', precio: 5500, producto: 'sandwich de pollo picante'},
-    { id: 7, nombre: 'Mariana', precio: 2500, producto: 'buñuelo'},
-    { id: 8, nombre: 'Alejandro', precio: 3500, producto: 'coca cola'},
-    { id: 9, nombre: 'Lucía', precio: 4000, producto: 'perro caliente'},
-    { id: 10, nombre: 'Emiliano', precio: 3000, producto: 'empanada'},
-    { id: 11, nombre: 'Renata', precio: 3000, producto: 'empanada'},
-    { id: 12, nombre: 'Diego', precio: 3500, peoducto: 'coca cola'},
-    { id: 13, nombre: 'Valeria', precio: 3000, producto: 'jugo hit'},
-    { id: 14, nombre: 'Gabriel', precio: 2500, producto: 'buñuelo'},
-    { id: 15, nombre: 'Victoria', precio: 5000, producto: 'sandwich de pollo'},
-    { id: 16, nombre: 'Julián', precio: 3000, producto: 'jugo hit'},
-    { id: 17, nombre: 'Isabella', precio: 4000, producto: 'perro caliente' },
-    { id: 18, nombre: 'Samuel', precio: 5500, producto: 'sandwich de pollo picante'},
-    { id: 19, nombre: 'Fernanda', precio: 2500, producto: 'buñuelo'},
-    { id: 20, nombre: 'Daniel', precio: 3000, procudto: 'empanada'},
-    { id: 21, nombre: 'Paula', precio: 5500, producto: 'sandwich de pollo picante'},
-    { id: 22, nombre: 'Martín', precio: 2000, producto: 'papas margarita },
-    { id: 23, nombre: 'Clara', precio: 1000, producto: 'chocolatina jet'},
-    { id: 24, nombre: 'Lucas', precio: 5000, producto: 'sandwich de pollo'},
-    { id: 25, nombre: 'Elena', precio: 4000, prosucto: 'perro caliente'},
-    { id: 26, nombre: 'Juan', precio: 2000, producto: 'papas margarita'},
-    { id: 27, nombre: 'Andrea', precio: 3000, producto: 'jugo hit'},
-    { id: 28, nombre: 'Nicolás', precio: 5500, producto: 'sandwich de pollo picante'},
-    { id: 29, nombre: 'Sara', precio: 1000, producto: 'chocolatina jet'},
-    { id: 30, nombre: 'Jorge', precio: 3500, producto: 'coca cola'},
-    { id: 31, nombre: 'Antonia', precio: 5000, producto: 'sandwich de pollo'},
-    { id: 32, nombre: 'Carlos', precio: 3000, producto: 'jugo hit'},
-    { id: 33, nombre: 'Romina', precio: 1000, producto: 'chocolatina jet'},
-    { id: 34, nombre: 'Raúl', precio: 2500, producto: 'buñuelo'},
-    { id: 35, nombre: 'Ana', precio: 2000, producto: 'papas margarita'},
-    { id: 36, nombre: 'Felipe', precio: 5500, producto: 'sandwich de pollo picante'},
-    { id: 37, nombre: 'Laura', precio: 2500, producto: 'buñuelo'},
-    { id: 38, nombre: 'Rodrigo', precio: 3000, producto: 'jugo hit'},
-    { id: 39, nombre: 'Manuela', precio: 1000, producto: 'chocolatina jet'},
-    { id: 40, nombre: 'Pedro', precio: 2500, producto: 'buñuelo'},
-    { id: 41, nombre: 'Alicia', precio: 3500, producto: 'coca cola'},
-    { id: 42, nombre: 'Pablo', precio: 3000, producto: 'empanada'},
-    { id: 43, nombre: 'Ximena', precio: 5000, producto: 'sandwich de pollo'},
-    { id: 44, nombre: 'Mario', precio: 1000, producto: 'chocolatina jet'},
-    { id: 45, nombre: 'Carmen', precio: 2000, producto: 'papas margarita'},
-    { id: 46, nombre: 'Miguel', precio: 5500, producto: 'sandwich de pollo picante'},
-    { id: 47, nombre: 'Patricia', precio: 3000, producto: 'jugo hit'},
-    { id: 48, nombre: 'Tomás', precio: 3000, producto: 'empanada'},
-    { id: 49, nombre: 'Isabel', precio: 4000, producto: 'perro caliente' },
-    { id: 50, nombre: 'Ricardo', precio: 5500, producto: 'sandwich de pollo picante'}
-];
-
-
+db.clientes.insertMany([
+    { id: 1, nombre: 'Sofía', precio: 8000, cantidad: 3, genero:'F'},
+    { id: 2, nombre: 'Mateo', precio: 7500, cantidad: 2, genero:'M'},
+    { id: 3, nombre: 'Valentina', precio: 8000, cantidad: 2, genero:'F'},
+    { id: 4, nombre: 'Santiago', precio: 7500, cantidad: 2, genero:'M'},
+    { id: 5, nombre: 'Camila', precio: 9000, cantidad: 3, genero:'F'},
+    { id: 6, nombre: 'Sebastián', precio: 5000, cantidad: 2, genero:'M'},
+    { id: 7, nombre: 'Mariana', precio: 2500, cantidad: 1, genero:'F'},
+    { id: 8, nombre: 'Alejandro', precio: 12000, cantidad: 4, genero:'M'},
+    { id: 9, nombre: 'Lucía', precio: 9000, cantidad: 3, genero:'F'},
+    { id: 10, nombre: 'Emiliano', precio: 11000, cantidad: 3, genero:'M'},
+    { id: 11, nombre: 'Renata', precio: 3000, cantidad: 1, genero:'F'},
+    { id: 12, nombre: 'Diego', precio: 11500, cantidad: 3, genero:'M'},
+    { id: 13, nombre: 'Valeria', precio: 5000, cantidad: 2, genero:'F'},
+    { id: 14, nombre: 'Gabriel', precio: 5000, cantidad: 2, genero:'M'},
+    { id: 15, nombre: 'Victoria', precio: 10000, cantidad: 2, genero:'M'},
+    { id: 16, nombre: 'Julián', precio: 7000, cantidad: 3, genero:'M'},
+    { id: 17, nombre: 'Isabella', precio: 4000, cantidad: 2, genero:'F'},
+    { id: 18, nombre: 'Samuel', precio: 10000, cantidad: 4, genero:'M'},
+    { id: 19, nombre: 'Fernanda', precio: 2500, cantidad: 1, genero:'F'},
+    { id: 20, nombre: 'Daniel', precio: 3000, cantidad: 1, genero:'M'},
+    { id: 21, nombre: 'Paula', precio: 5500, cantidad: 2, genero:'F'},
+    { id: 22, nombre: 'Martín', precio: 2000, cantidad: 2, genero:'M'},
+    { id: 23, nombre: 'Clara', precio: 1000, cantidad: 1, genero:'F'},
+    { id: 24, nombre: 'Lucas', precio: 5000, cantidad: 3, genero:'M'},
+    { id: 25, nombre: 'Elena', precio: 9000, cantidad: 2, genero:'F'},
+    { id: 26, nombre: 'Juan', precio: 8500, cantidad: 2, genero:'M'},
+    { id: 27, nombre: 'Andrea', precio: 3000, cantidad: 1, genero:'F'},
+    { id: 28, nombre: 'Nicolás', precio: 17000, cantidad: 4, genero:'M'},
+    { id: 29, nombre: 'Sara', precio: 1000, cantidad: 1, genero:'F'},
+    { id: 30, nombre: 'Jorge', precio: 5500, cantidad: 2, genero:'M'},
+    { id: 31, nombre: 'Carla', precio: 8000, cantidad: 3, genero:'F'},
+    { id: 32, nombre: 'Carlos', precio: 10000, cantidad: 3, genero:'M'},
+    { id: 33, nombre: 'Marcela', precio: 2500, cantidad: 1, genero:'F'},
+    { id: 34, nombre: 'Raúl', precio: 5500, cantidad: 2, genero:'M'},
+    { id: 35, nombre: 'Ana', precio: 7500, cantidad: 2, genero:'F'},
+    { id: 36, nombre: 'Felipe', precio: 8500, cantidad: 2,genero: 'M'},
+    { id: 37, nombre: 'Laura', precio: 2500, cantidad: 1,genero: 'F'},
+    { id: 38, nombre: 'Rodrigo', precio: 11000, cantidad: 4,genero: 'M'},
+    { id: 39, nombre: 'Manuela', precio: 12500, cantidad: 4,genero: 'F'},
+    { id: 40, nombre: 'Pedro', precio: 6500, cantidad: 2,genero: 'M'},
+    { id: 41, nombre: 'Alicia', precio: 3500, cantidad: 1,genero: 'F'},
+    { id: 42, nombre: 'Pablo', precio: 10500, cantidad: 3,genero: 'M'},
+    { id: 43, nombre: 'Ximena', precio: 6000, cantidad: 2,genero: 'F'},
+    { id: 44, nombre: 'Mario', precio: 5000, cantidad: 2,genero: 'M'},
+    { id: 45, nombre: 'Carmen', precio: 9000, cantidad: 3,genero: 'F'},
+    { id: 46, nombre: 'Miguel', precio: 5500, cantidad: 1,genero: 'M'},
+    { id: 47, nombre: 'Patricia', precio: 3000, cantidad: 1,genero: 'F'},
+    { id: 48, nombre: 'Tomás', precio: 8500, cantidad: 2,genero: 'M'},
+    { id: 49, nombre: 'Isabel', precio: 4000, cantidad: 4,genero: 'F'},
+    { id: 50, nombre: 'Ricardo', precio: 13000, cantidad: 3, genero: 'M'}
     
 ]);
 
-//db.estudiantes.find({edad:{$eq:50}})
-//db.estudiantes.find({name:{$eq:"Alexander"}})
-//db.estudiantes.find({edad:{$gte:80}})
-//db.estudiantes.find({edad:{$lte:20}})
-//db.estudiantes.find({gender:{$ne:"M"}})
-//db.estudiantes.find({edad:{$nin:[80,10]}}) //omite valores
+//db.clientes.find({cantidad:{$eq:1}}) 
+//db.clientes.find({cantidad:{$eq:2}}) 
+//db.clientes.find({cantidad:{$eq:3}}) 
+//db.clientes.find({cantidad:{$gte:4}})
+//db.clientes.find({$and:[{cantidad:{$eq:1}}, {precio:{$gte:5500}}]}) //saber quien compro sandwich de pollo picante
+//db.clientes.find({precio:{$gte:10000}})  //saber compras mayores a 10000
+//db.clientes.find({precio:{$lte:5000}}) //saber compras menores a 5000
+//db.clientes.find({$and:[{cantidad:{$eq:3}}, {precio:{$lte:10000}}]}) //compras de 3 productos menores a 10000
+//db.clientes.find({$and:[{cantidad:{$eq:4}}, {precio:{$gte:10000}}]}) //compras de 4 productos mayores a 10000
+//db.clientes.find({$and:[{cantidad:{$eq:2}}, {precio:{$gte:5000}}]}) //compras de 2 productos menores a 5000
+//db.clientes.find({$and:[{precio:{$gte:6000}}, {cantidad:{$gte:2}}]}) //compras mayores a 6 y que compraron mas de 2 productos
+//db.clientes.find({$and:[{precio:{$lte:6000}}, {cantidad:{$gte:3}}]}) //compras menores a 6 y que compraron mas de 2 productos
+//db.clientes.find({$and:[{cantidad:{$gte:3}}, {genero:{$ne:"M"}}]}) //compraron mas de 3 productos Y que sean mujeres
+//db.clientes.find({$and:[{cantidad:{$lte:3}}, {genero:{$ne:"F"}}]}) //compraron menos de 3 productos Y que sean hombres
+//db.clientes.find({$and:[{precio:{$lte:10000}}, {genero:{$ne:"M"}}]}) //compraron menos de 10000 en productos Y que sean mujeres
+//db.clientes.find({$and:[{precio:{$lte:10000}}, {genero:{$ne:"F"}}]}) //compraron menos de 10000 en productos Y que sean hombres
+//db.clientes.find({$and:[{precio:{$gte:10000}}, {genero:{$ne:"M"}}]}) //compraron mas de 10000 en productos Y que sean mujeres
+//db.clientes.find({$and:[{precio:{$gte:10000}}, {genero:{$ne:"F"}}]}) //compraron mas de 10000 en productos Y que sean hombres
+//db.clientes.find({genero:{$eq:'M'}}) 
+//db.clientes.find({genero:{$eq:'F'}}) 
