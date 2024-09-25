@@ -27,18 +27,11 @@
     </center>
 
 
-
     <div class="cajatexto">
       <h2>Primera Consulta</h2>
       <p>Esta consulta busca los carros del color especificado.</p>
 
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta1.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/captura1.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="1">Ver consulta</button>
 
     </div>
 
@@ -49,114 +42,59 @@
       <h2>Segunda</h2>
       <p>Consulta utlizada pra buscar los carros superiores a el año de fabicacion especificado.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta2.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/captura2.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="2">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Tercera Consulta</h2>
       <p>Para conocer cuales son los carros superiores al precio especificado</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta3.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/captura3.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="3">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Cuarta Consulta</h2>
       <p>Consulta para filtrar cuales son los carros con una capacidad de pasajeros menor a la especificada.</p>
-      <<center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta4.png"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/capturasCarros/captura4.png"></div>
-        </center>
+      <button class="view-more-btn" data-card="4">Ver consulta</button>
     </div>
-
-
-
+  
     <div class="cajatexto">
       <h2>Quinta Consulta</h2>
       <p>Con la finalidad de conocer los carros con una potencia menor o igual a la potencia solicitada.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta5.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/captura5.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="5">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Sexta consulta</h2>
       <p>Consulta utilizada para buscar los carros de una marca diferente a la especificada.</p>
-      <<center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta6.png"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/capturasCarros/captura6.png"></div>
-        </center>
+      <button class="view-more-btn" data-card="6">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Septima consulta</h2>
       <p>Para buscar los carros de modelo 2021, 2022 y 2023.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta7.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/captura7.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="7">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Octava Consulta</h2>
       <p>Para buscar cuales son los carros con capacidad distinta a 6 o 5 pasajeros.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta8.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/captura8.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="8">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>novena Consulta</h2>
       <p>Esta consulta se usa para buscar los carros con una potencia mayor a 150 y con un precio menor al especificad0.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta9.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/captura9.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="9">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Decima Consulta</h2>
       <p>Consulta para eliminar.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/consulta10.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasCarros/captura10.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="8">Ver consulta</button>
     </div>
+
     <div class="cuerpoProductos">
       <center>
         <a class="botonDB" href="Consultas.html">Volver</a>
@@ -171,12 +109,25 @@
   </div>
 
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 <footer>
   <p>© 2024 Nuestra Empresa | Todos los derechos reservados</p>
 </footer>
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <pre class="code-block">
+          <code id="modal-code"></code>
+      </pre>
+  </div>
+</div>
+
+<script src="script/carros2.js"></script>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1Yz6Btw5ySU6sdeZ/3paaI5iPY4b7C8CgoIF0yZhHbM1" crossorigin="anonymous"></script>
 <script>

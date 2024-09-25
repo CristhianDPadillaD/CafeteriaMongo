@@ -31,13 +31,7 @@
     <div class="cajatexto">
       <h2>Primera Consulta</h2>
       <p>Busca una materia que sea igual a "mecanica" utiliando $eq.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias1.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/Resultado1.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="1">Ver consulta</button>
     </div>
     <br>
 
@@ -45,37 +39,19 @@
       <h2>Segunda</h2>
       <p>Busca materias que sean mayor a 2 creditos utilizando $gt.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias2.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/Resultado2.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="2">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Tercera Consulta</h2>
       <p>Busca materias que sus horas teoricas sean mayor o igual a 40 horas, utilizando $gte</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias3.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/Resultado4.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="3">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Cuarta Consulta</h2>
       <p>Busca materias las cuales sus horas practicas sean menores a 180 horas, utilizando $lt.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias4.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/Resultado4.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="4">Ver consulta</button>
     </div>
 
 
@@ -83,75 +59,39 @@
     <div class="cajatexto">
       <h2>Quinta Consulta</h2>
       <p>Busca materias las cual su codigo de materia sea menor o igual a 224132 emplenado $lte.</p>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias5.PNG"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas materias/Resultado5.PNG"></div>
-        </center>
+      <button class="view-more-btn" data-card="5">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Sexta consulta</h2>
       <p>Exlcuye de la busqueda las materias que tengan como profesior responsable a Mauricio, utilizando $ne.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias6.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/Resultado6.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="6">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Septima consulta</h2>
       <p>Busca las aulas que se encuentra ente MI 601 y MI604, emplenado $in.</p>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias7.PNG"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas materias/Resultado7.PNG"></div>
-        </center>
+      <button class="view-more-btn" data-card="7">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Octava Consulta</h2>
       <p>Busca las materias que sus promedios no estan entre 4.0 y 4.5 utilizando $nin.</p>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias8.PNG"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas materias/Resultado8.PNG"></div>
-        </center>
+      <button class="view-more-btn" data-card="8">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>novena Consulta</h2>
       <p>Busca las materias que su promedio es menor o igual a 4.0 utilizando $lte.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias9.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/Resultado9.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="9">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Decima Consulta</h2>
       <p>10. Se elimina la materia con el codigo 84020 empleando deletrOne y se hace la consulta psrra verificar que se borro con $eq.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/ConsultaMaterias10.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas materias/Resultado10.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="10">Ver consulta</button>
     </div>
     
     <div class="cuerpoProductos">
@@ -174,6 +114,20 @@
 <footer>
   <p>© 2024 Nuestra Empresa | Todos los derechos reservados</p>
 </footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <pre class="code-block">
+          <code id="modal-code"></code>
+      </pre>
+  </div>
+</div>
+
+<script src="script/materias.js"></script>
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1Yz6Btw5ySU6sdeZ/3paaI5iPY4b7C8CgoIF0yZhHbM1" crossorigin="anonymous"></script>
 <script>

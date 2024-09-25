@@ -1,0 +1,1557 @@
+const cardCodeDetails = {
+    "1": {
+        code: `  {
+    _id: ObjectId('66f48e97ae46014a0e42f816'),
+    nombre: 'Mantequilla Alpina',
+    descripcion: 'Mantequilla con sal',
+    precio: 9000,
+    categoria: 'Lácteos',
+    unidades: 50,
+    marca: 'Alpina',
+    idProducto: '16',
+    peso: 0.5,
+    unidadesVendidas: 150,
+    precioPromedio: 8800
+  } 
+  
+  `
+    },
+    "2": {
+        code: `
+      {
+    _id: ObjectId('66f48eb2087038945542f809'),
+    nombre: 'Aceite Premier',
+    descripcion: 'Aceite vegetal para cocinar',
+    precio: 15000,
+    categoria: 'Aceites',
+    unidades: 40,
+    marca: 'Premier',
+    idProducto: '3',
+    peso: 3,
+    unidadesVendidas: 200,
+    precioPromedio: 14500
+  },
+  {
+    _id: ObjectId('66f48eb2087038945542f80a'),
+    nombre: 'Papel Higiénico Familia',
+    descripcion: 'Papel higiénico de doble hoja',
+    precio: 12000,
+    categoria: 'Aseo',
+    unidades: 100,
+    marca: 'Familia',
+    idProducto: '4',
+    peso: 0.24,
+    unidadesVendidas: 350,
+    precioPromedio: 11500
+  },
+  {
+    _id: ObjectId('66f48eb2087038945542f80b'),
+    nombre: 'Detergente Ariel',
+    descripcion: 'Detergente en polvo para ropa',
+    precio: 25000,
+    categoria: 'Aseo',
+    unidades: 60,
+    marca: 'Ariel',
+    idProducto: '5',
+    peso: 5,
+    unidadesVendidas: 280,
+    precioPromedio: 24000
+  },
+  {
+    _id: ObjectId('66f48eb2087038945542f80d'),
+    nombre: 'Cereal Zucaritas',
+    descripcion: 'Cereal de maíz azucarado',
+    precio: 14000,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: "Kellogg's",
+    idProducto: '7',
+    peso: 1,
+    unidadesVendidas: 200,
+    precioPromedio: 13500
+  },
+  {
+    _id: ObjectId('66f48eb2087038945542f810'),
+    nombre: 'Huevos Kikes',
+    descripcion: 'Huevos frescos',
+    precio: 14000,
+    categoria: 'Alimentos',
+    unidades: 120,
+    marca: 'Kikes',
+    idProducto: '10',
+    peso: 2,
+    unidadesVendidas: 400,
+    precioPromedio: 13500
+  },
+  {
+    _id: ObjectId('66f48eb2087038945542f812'),
+    nombre: 'Café Juan Valdez',
+    descripcion: 'Café molido tradicional',
+    precio: 12000,
+    categoria: 'Alimentos',
+    unidades: 60,
+    marca: 'Juan Valdez',
+    idProducto: '12',
+    peso: 0.5,
+    unidadesVendidas: 250,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48eb2087038945542f816'),
+    nombre: 'Mantequilla Alpina',
+    descripcion: 'Mantequilla con sal',
+    precio: 9000,
+    categoria: 'Lácteos',
+    unidades: 50,
+    marca: 'Alpina',
+    idProducto: '16',
+    peso: 0.5,
+    unidadesVendidas: 150,
+    precioPromedio: 8800
+  },
+  {
+    _id: ObjectId('66f48eb2087038945542f818'),
+    nombre: 'Queso Colanta',
+    descripcion: 'Queso campesino fresco',
+    precio: 12000,
+    categoria: 'Lácteos',
+    unidades: 40,
+    marca: 'Colanta',
+    idProducto: '18',
+    peso: 0.5,
+    unidadesVendidas: 180,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48eb2087038945542f819'),
+    nombre: 'Atún Van Camps',
+    descripcion: 'Atún en aceite',
+    precio: 5500,
+    categoria: 'Alimentos',
+    unidades: 80,
+    marca: "Van Camp's",
+    idProducto: '19',
+    peso: 0.1,
+    unidadesVendidas: 400,
+    precioPromedio: 5400
+  },
+            
+  `
+    },
+    "3": {
+        code: `
+      {
+    _id: ObjectId('66f48ecf80fc78f9f142f80a'),
+    nombre: 'Papel Higiénico Familia',
+    descripcion: 'Papel higiénico de doble hoja',
+    precio: 12000,
+    categoria: 'Aseo',
+    unidades: 100,
+    marca: 'Familia',
+    idProducto: '4',
+    peso: 0.24,
+    unidadesVendidas: 350,
+    precioPromedio: 11500
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f80e'),
+    nombre: 'Jugo Hit',
+    descripcion: 'Jugo de frutas tropicales',
+    precio: 2200,
+    categoria: 'Bebidas',
+    unidades: 150,
+    marca: 'Hit',
+    idProducto: '8',
+    peso: 0.5,
+    unidadesVendidas: 450,
+    precioPromedio: 2100
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f80f'),
+    nombre: 'Gaseosa Coca-Cola',
+    descripcion: 'Gaseosa regular',
+    precio: 3500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Coca-Cola',
+    idProducto: '9',
+    peso: 1.5,
+    unidadesVendidas: 600,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f810'),
+    nombre: 'Huevos Kikes',
+    descripcion: 'Huevos frescos',
+    precio: 14000,
+    categoria: 'Alimentos',
+    unidades: 120,
+    marca: 'Kikes',
+    idProducto: '10',
+    peso: 2,
+    unidadesVendidas: 400,
+    precioPromedio: 13500
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f815'),
+    nombre: 'Galletas Saltín Noel',
+    descripcion: 'Galletas saladas',
+    precio: 3500,
+    categoria: 'Alimentos',
+    unidades: 100,
+    marca: 'Saltín Noel',
+    idProducto: '15',
+    peso: 0.3,
+    unidadesVendidas: 350,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f81d'),
+    nombre: 'Cerveza Aguila',
+    descripcion: 'Cerveza lager',
+    precio: 2500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Aguila',
+    idProducto: '23',
+    peso: 0.3,
+    unidadesVendidas: 600,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f820'),
+    nombre: 'Jabón Dove',
+    descripcion: 'Jabón de baño',
+    precio: 2500,
+    categoria: 'Aseo',
+    unidades: 120,
+    marca: 'Dove',
+    idProducto: '26',
+    peso: 0.1,
+    unidadesVendidas: 350,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f822'),
+    nombre: 'Crema Dental Colgate',
+    descripcion: 'Crema dental blanqueadora',
+    precio: 6500,
+    categoria: 'Aseo',
+    unidades: 100,
+    marca: 'Colgate',
+    idProducto: '28',
+    peso: 0.1,
+    unidadesVendidas: 200,
+    precioPromedio: 6000
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f827'),
+    nombre: 'Agua Cristal',
+    descripcion: 'Agua embotellada',
+    precio: 1800,
+    categoria: 'Bebidas',
+    unidades: 150,
+    marca: 'Cristal',
+    idProducto: '33',
+    peso: 0.6,
+    unidadesVendidas: 500,
+    precioPromedio: 1700
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f82a'),
+    nombre: 'Galletas Oreo',
+    descripcion: 'Galletas de chocolate con crema',
+    precio: 3000,
+    categoria: 'Alimentos',
+    unidades: 150,
+    marca: 'Oreo',
+    idProducto: '36',
+    peso: 0.2,
+    unidadesVendidas: 500,
+    precioPromedio: 2900
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f82b'),
+    nombre: 'Cerveza Poker',
+    descripcion: 'Cerveza rubia',
+    precio: 2500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Poker',
+    idProducto: '37',
+    peso: 0.3,
+    unidadesVendidas: 600,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f82c'),
+    nombre: 'Chocolatina Jet',
+    descripcion: 'Chocolate con leche',
+    precio: 1000,
+    categoria: 'Alimentos',
+    unidades: 300,
+    marca: 'Jet',
+    idProducto: '38',
+    peso: 0.01,
+    unidadesVendidas: 1000,
+    precioPromedio: 950
+  },
+  {
+    _id: ObjectId('66f48ecf80fc78f9f142f82d'),
+    nombre: 'Agua Brisa',
+    descripcion: 'Agua embotellada sin gas',
+    precio: 2000,
+    categoria: 'Bebidas',
+    unidades: 180,
+    marca: 'Brisa',
+    idProducto: '39',
+    peso: 0.6,
+    unidadesVendidas: 450,
+    precioPromedio: 1900
+  }
+
+             `
+    },
+    "4": {
+        code: `
+      
+   {
+    _id: ObjectId('66f48ee83cde3cf2d042f807'),
+    nombre: 'Arroz Diana',
+    descripcion: 'Arroz blanco premium',
+    precio: 4000,
+    categoria: 'Alimentos',
+    unidades: 50,
+    marca: 'Diana',
+    idProducto: '1',
+    peso: 1,
+    unidadesVendidas: 300,
+    precioPromedio: 3800
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f808'),
+    nombre: 'Leche Alquería',
+    descripcion: 'Leche entera larga vida',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 80,
+    marca: 'Alquería',
+    idProducto: '2',
+    peso: 1,
+    unidadesVendidas: 500,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f810'),
+    nombre: 'Huevos Kikes',
+    descripcion: 'Huevos frescos',
+    precio: 14000,
+    categoria: 'Alimentos',
+    unidades: 120,
+    marca: 'Kikes',
+    idProducto: '10',
+    peso: 2,
+    unidadesVendidas: 400,
+    precioPromedio: 13500
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f811'),
+    nombre: 'Azúcar Manuelita',
+    descripcion: 'Azúcar blanca refinada',
+    precio: 3000,
+    categoria: 'Alimentos',
+    unidades: 90,
+    marca: 'Manuelita',
+    idProducto: '11',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 2900
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f812'),
+    nombre: 'Café Juan Valdez',
+    descripcion: 'Café molido tradicional',
+    precio: 12000,
+    categoria: 'Alimentos',
+    unidades: 60,
+    marca: 'Juan Valdez',
+    idProducto: '12',
+    peso: 0.5,
+    unidadesVendidas: 250,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f813'),
+    nombre: 'Té Lipton',
+    descripcion: 'Té en bolsitas',
+    precio: 5000,
+    categoria: 'Alimentos',
+    unidades: 80,
+    marca: 'Lipton',
+    idProducto: '13',
+    peso: 0.2,
+    unidadesVendidas: 300,
+    precioPromedio: 4800
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f814'),
+    nombre: 'Pasta La Muñeca',
+    descripcion: 'Pasta espagueti tradicional',
+    precio: 2500,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: 'La Muñeca',
+    idProducto: '14',
+    peso: 0.5,
+    unidadesVendidas: 230,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f815'),
+    nombre: 'Galletas Saltín Noel',
+    descripcion: 'Galletas saladas',
+    precio: 3500,
+    categoria: 'Alimentos',
+    unidades: 100,
+    marca: 'Saltín Noel',
+    idProducto: '15',
+    peso: 0.3,
+    unidadesVendidas: 350,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f816'),
+    nombre: 'Mantequilla Alpina',
+    descripcion: 'Mantequilla con sal',
+    precio: 9000,
+    categoria: 'Lácteos',
+    unidades: 50,
+    marca: 'Alpina',
+    idProducto: '16',
+    peso: 0.5,
+    unidadesVendidas: 150,
+    precioPromedio: 8800
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f817'),
+    nombre: 'Yogurt Alpina',
+    descripcion: 'Yogurt natural sin azúcar',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 60,
+    marca: 'Alpina',
+    idProducto: '17',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f818'),
+    nombre: 'Queso Colanta',
+    descripcion: 'Queso campesino fresco',
+    precio: 12000,
+    categoria: 'Lácteos',
+    unidades: 40,
+    marca: 'Colanta',
+    idProducto: '18',
+    peso: 0.5,
+    unidadesVendidas: 180,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48ee83cde3cf2d042f819'),
+    nombre: 'Atún Van Camps',
+    descripcion: 'Atún en aceite',
+    precio: 5500,
+    categoria: 'Alimentos',
+    unidades: 80,
+    marca: "Van Camp's",
+    idProducto: '19',
+    peso: 0.1,
+    unidadesVendidas: 400,
+    precioPromedio: 5400
+  }
+            `
+    },
+    "5": {
+        code: `{
+    _id: ObjectId('66f48f015aae91b1a342f807'),
+    nombre: 'Arroz Diana',
+    descripcion: 'Arroz blanco premium',
+    precio: 4000,
+    categoria: 'Alimentos',
+    unidades: 50,
+    marca: 'Diana',
+    idProducto: '1',
+    peso: 1,
+    unidadesVendidas: 300,
+    precioPromedio: 3800
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f808'),
+    nombre: 'Leche Alquería',
+    descripcion: 'Leche entera larga vida',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 80,
+    marca: 'Alquería',
+    idProducto: '2',
+    peso: 1,
+    unidadesVendidas: 500,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f80a'),
+    nombre: 'Papel Higiénico Familia',
+    descripcion: 'Papel higiénico de doble hoja',
+    precio: 12000,
+    categoria: 'Aseo',
+    unidades: 100,
+    marca: 'Familia',
+    idProducto: '4',
+    peso: 0.24,
+    unidadesVendidas: 350,
+    precioPromedio: 11500
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f80c'),
+    nombre: 'Pan Bimbo',
+    descripcion: 'Pan de molde blanco',
+    precio: 4500,
+    categoria: 'Alimentos',
+    unidades: 90,
+    marca: 'Bimbo',
+    idProducto: '6',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 4300
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f80d'),
+    nombre: 'Cereal Zucaritas',
+    descripcion: 'Cereal de maíz azucarado',
+    precio: 14000,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: "Kellogg's",
+    idProducto: '7',
+    peso: 1,
+    unidadesVendidas: 200,
+    precioPromedio: 13500
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f80e'),
+    nombre: 'Jugo Hit',
+    descripcion: 'Jugo de frutas tropicales',
+    precio: 2200,
+    categoria: 'Bebidas',
+    unidades: 150,
+    marca: 'Hit',
+    idProducto: '8',
+    peso: 0.5,
+    unidadesVendidas: 450,
+    precioPromedio: 2100
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f811'),
+    nombre: 'Azúcar Manuelita',
+    descripcion: 'Azúcar blanca refinada',
+    precio: 3000,
+    categoria: 'Alimentos',
+    unidades: 90,
+    marca: 'Manuelita',
+    idProducto: '11',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 2900
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f812'),
+    nombre: 'Café Juan Valdez',
+    descripcion: 'Café molido tradicional',
+    precio: 12000,
+    categoria: 'Alimentos',
+    unidades: 60,
+    marca: 'Juan Valdez',
+    idProducto: '12',
+    peso: 0.5,
+    unidadesVendidas: 250,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f813'),
+    nombre: 'Té Lipton',
+    descripcion: 'Té en bolsitas',
+    precio: 5000,
+    categoria: 'Alimentos',
+    unidades: 80,
+    marca: 'Lipton',
+    idProducto: '13',
+    peso: 0.2,
+    unidadesVendidas: 300,
+    precioPromedio: 4800
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f814'),
+    nombre: 'Pasta La Muñeca',
+    descripcion: 'Pasta espagueti tradicional',
+    precio: 2500,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: 'La Muñeca',
+    idProducto: '14',
+    peso: 0.5,
+    unidadesVendidas: 230,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f815'),
+    nombre: 'Galletas Saltín Noel',
+    descripcion: 'Galletas saladas',
+    precio: 3500,
+    categoria: 'Alimentos',
+    unidades: 100,
+    marca: 'Saltín Noel',
+    idProducto: '15',
+    peso: 0.3,
+    unidadesVendidas: 350,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f816'),
+    nombre: 'Mantequilla Alpina',
+    descripcion: 'Mantequilla con sal',
+    precio: 9000,
+    categoria: 'Lácteos',
+    unidades: 50,
+    marca: 'Alpina',
+    idProducto: '16',
+    peso: 0.5,
+    unidadesVendidas: 150,
+    precioPromedio: 8800
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f817'),
+    nombre: 'Yogurt Alpina',
+    descripcion: 'Yogurt natural sin azúcar',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 60,
+    marca: 'Alpina',
+    idProducto: '17',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f818'),
+    nombre: 'Queso Colanta',
+    descripcion: 'Queso campesino fresco',
+    precio: 12000,
+    categoria: 'Lácteos',
+    unidades: 40,
+    marca: 'Colanta',
+    idProducto: '18',
+    peso: 0.5,
+    unidadesVendidas: 180,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f819'),
+    nombre: 'Atún Van Camps',
+    descripcion: 'Atún en aceite',
+    precio: 5500,
+    categoria: 'Alimentos',
+    unidades: 80,
+    marca: "Van Camp's",
+    idProducto: '19',
+    peso: 0.1,
+    unidadesVendidas: 400,
+    precioPromedio: 5400
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f81a'),
+    nombre: 'Lentejas La Lucha',
+    descripcion: 'Lentejas secas',
+    precio: 3000,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: 'La Lucha',
+    idProducto: '20',
+    peso: 0.5,
+    unidadesVendidas: 250,
+    precioPromedio: 2900
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f81b'),
+    nombre: 'Frijoles Cosecha',
+    descripcion: 'Frijoles rojos secos',
+    precio: 4000,
+    categoria: 'Alimentos',
+    unidades: 60,
+    marca: 'Cosecha',
+    idProducto: '21',
+    peso: 0.5,
+    unidadesVendidas: 220,
+    precioPromedio: 3900
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f81c'),
+    nombre: 'Sal Refisal',
+    descripcion: 'Sal refinada',
+    precio: 2500,
+    categoria: 'Alimentos',
+    unidades: 90,
+    marca: 'Refisal',
+    idProducto: '22',
+    peso: 1,
+    unidadesVendidas: 400,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f81d'),
+    nombre: 'Cerveza Aguila',
+    descripcion: 'Cerveza lager',
+    precio: 2500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Aguila',
+    idProducto: '23',
+    peso: 0.3,
+    unidadesVendidas: 600,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f015aae91b1a342f81e'),
+    nombre: 'Vino Concha y Toro',
+    descripcion: 'Vino tinto seco',
+    precio: 35000,
+    categoria: 'Bebidas',
+    unidades: 30,
+    marca: 'Concha y Toro',
+    idProducto: '24',
+    peso: 0.7,
+    unidadesVendidas: 150,
+    precioPromedio: 34000
+  }
+           
+    `
+    },
+    "6": {
+        code: ` {
+    _id: ObjectId('66f48f195c59bb3be542f807'),
+    nombre: 'Arroz Diana',
+    descripcion: 'Arroz blanco premium',
+    precio: 4000,
+    categoria: 'Alimentos',
+    unidades: 50,
+    marca: 'Diana',
+    idProducto: '1',
+    peso: 1,
+    unidadesVendidas: 300,
+    precioPromedio: 3800
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f808'),
+    nombre: 'Leche Alquería',
+    descripcion: 'Leche entera larga vida',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 80,
+    marca: 'Alquería',
+    idProducto: '2',
+    peso: 1,
+    unidadesVendidas: 500,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f809'),
+    nombre: 'Aceite Premier',
+    descripcion: 'Aceite vegetal para cocinar',
+    precio: 15000,
+    categoria: 'Aceites',
+    unidades: 40,
+    marca: 'Premier',
+    idProducto: '3',
+    peso: 3,
+    unidadesVendidas: 200,
+    precioPromedio: 14500
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f80a'),
+    nombre: 'Papel Higiénico Familia',
+    descripcion: 'Papel higiénico de doble hoja',
+    precio: 12000,
+    categoria: 'Aseo',
+    unidades: 100,
+    marca: 'Familia',
+    idProducto: '4',
+    peso: 0.24,
+    unidadesVendidas: 350,
+    precioPromedio: 11500
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f80b'),
+    nombre: 'Detergente Ariel',
+    descripcion: 'Detergente en polvo para ropa',
+    precio: 25000,
+    categoria: 'Aseo',
+    unidades: 60,
+    marca: 'Ariel',
+    idProducto: '5',
+    peso: 5,
+    unidadesVendidas: 280,
+    precioPromedio: 24000
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f80c'),
+    nombre: 'Pan Bimbo',
+    descripcion: 'Pan de molde blanco',
+    precio: 4500,
+    categoria: 'Alimentos',
+    unidades: 90,
+    marca: 'Bimbo',
+    idProducto: '6',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 4300
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f80d'),
+    nombre: 'Cereal Zucaritas',
+    descripcion: 'Cereal de maíz azucarado',
+    precio: 14000,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: "Kellogg's",
+    idProducto: '7',
+    peso: 1,
+    unidadesVendidas: 200,
+    precioPromedio: 13500
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f80e'),
+    nombre: 'Jugo Hit',
+    descripcion: 'Jugo de frutas tropicales',
+    precio: 2200,
+    categoria: 'Bebidas',
+    unidades: 150,
+    marca: 'Hit',
+    idProducto: '8',
+    peso: 0.5,
+    unidadesVendidas: 450,
+    precioPromedio: 2100
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f80f'),
+    nombre: 'Gaseosa Coca-Cola',
+    descripcion: 'Gaseosa regular',
+    precio: 3500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Coca-Cola',
+    idProducto: '9',
+    peso: 1.5,
+    unidadesVendidas: 600,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f811'),
+    nombre: 'Azúcar Manuelita',
+    descripcion: 'Azúcar blanca refinada',
+    precio: 3000,
+    categoria: 'Alimentos',
+    unidades: 90,
+    marca: 'Manuelita',
+    idProducto: '11',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 2900
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f812'),
+    nombre: 'Café Juan Valdez',
+    descripcion: 'Café molido tradicional',
+    precio: 12000,
+    categoria: 'Alimentos',
+    unidades: 60,
+    marca: 'Juan Valdez',
+    idProducto: '12',
+    peso: 0.5,
+    unidadesVendidas: 250,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f813'),
+    nombre: 'Té Lipton',
+    descripcion: 'Té en bolsitas',
+    precio: 5000,
+    categoria: 'Alimentos',
+    unidades: 80,
+    marca: 'Lipton',
+    idProducto: '13',
+    peso: 0.2,
+    unidadesVendidas: 300,
+    precioPromedio: 4800
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f814'),
+    nombre: 'Pasta La Muñeca',
+    descripcion: 'Pasta espagueti tradicional',
+    precio: 2500,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: 'La Muñeca',
+    idProducto: '14',
+    peso: 0.5,
+    unidadesVendidas: 230,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f815'),
+    nombre: 'Galletas Saltín Noel',
+    descripcion: 'Galletas saladas',
+    precio: 3500,
+    categoria: 'Alimentos',
+    unidades: 100,
+    marca: 'Saltín Noel',
+    idProducto: '15',
+    peso: 0.3,
+    unidadesVendidas: 350,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f816'),
+    nombre: 'Mantequilla Alpina',
+    descripcion: 'Mantequilla con sal',
+    precio: 9000,
+    categoria: 'Lácteos',
+    unidades: 50,
+    marca: 'Alpina',
+    idProducto: '16',
+    peso: 0.5,
+    unidadesVendidas: 150,
+    precioPromedio: 8800
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f817'),
+    nombre: 'Yogurt Alpina',
+    descripcion: 'Yogurt natural sin azúcar',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 60,
+    marca: 'Alpina',
+    idProducto: '17',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f818'),
+    nombre: 'Queso Colanta',
+    descripcion: 'Queso campesino fresco',
+    precio: 12000,
+    categoria: 'Lácteos',
+    unidades: 40,
+    marca: 'Colanta',
+    idProducto: '18',
+    peso: 0.5,
+    unidadesVendidas: 180,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f81a'),
+    nombre: 'Lentejas La Lucha',
+    descripcion: 'Lentejas secas',
+    precio: 3000,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: 'La Lucha',
+    idProducto: '20',
+    peso: 0.5,
+    unidadesVendidas: 250,
+    precioPromedio: 2900
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f81b'),
+    nombre: 'Frijoles Cosecha',
+    descripcion: 'Frijoles rojos secos',
+    precio: 4000,
+    categoria: 'Alimentos',
+    unidades: 60,
+    marca: 'Cosecha',
+    idProducto: '21',
+    peso: 0.5,
+    unidadesVendidas: 220,
+    precioPromedio: 3900
+  },
+  {
+    _id: ObjectId('66f48f195c59bb3be542f81d'),
+    nombre: 'Cerveza Aguila',
+    descripcion: 'Cerveza lager',
+    precio: 2500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Aguila',
+    idProducto: '23',
+    peso: 0.3,
+    unidadesVendidas: 600,
+    precioPromedio: 2400
+  }
+            
+    `
+    },
+    "7": {
+        code: `
+            {
+    _id: ObjectId('66f48f34ef940acdd142f808'),
+    nombre: 'Leche Alquería',
+    descripcion: 'Leche entera larga vida',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 80,
+    marca: 'Alquería',
+    idProducto: '2',
+    peso: 1,
+    unidadesVendidas: 500,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f34ef940acdd142f80f'),
+    nombre: 'Gaseosa Coca-Cola',
+    descripcion: 'Gaseosa regular',
+    precio: 3500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Coca-Cola',
+    idProducto: '9',
+    peso: 1.5,
+    unidadesVendidas: 600,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f34ef940acdd142f814'),
+    nombre: 'Pasta La Muñeca',
+    descripcion: 'Pasta espagueti tradicional',
+    precio: 2500,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: 'La Muñeca',
+    idProducto: '14',
+    peso: 0.5,
+    unidadesVendidas: 230,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f34ef940acdd142f815'),
+    nombre: 'Galletas Saltín Noel',
+    descripcion: 'Galletas saladas',
+    precio: 3500,
+    categoria: 'Alimentos',
+    unidades: 100,
+    marca: 'Saltín Noel',
+    idProducto: '15',
+    peso: 0.3,
+    unidadesVendidas: 350,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f34ef940acdd142f817'),
+    nombre: 'Yogurt Alpina',
+    descripcion: 'Yogurt natural sin azúcar',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 60,
+    marca: 'Alpina',
+    idProducto: '17',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f34ef940acdd142f81c'),
+    nombre: 'Sal Refisal',
+    descripcion: 'Sal refinada',
+    precio: 2500,
+    categoria: 'Alimentos',
+    unidades: 90,
+    marca: 'Refisal',
+    idProducto: '22',
+    peso: 1,
+    unidadesVendidas: 400,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f34ef940acdd142f81d'),
+    nombre: 'Cerveza Aguila',
+    descripcion: 'Cerveza lager',
+    precio: 2500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Aguila',
+    idProducto: '23',
+    peso: 0.3,
+    unidadesVendidas: 600,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f34ef940acdd142f820'),
+    nombre: 'Jabón Dove',
+    descripcion: 'Jabón de baño',
+    precio: 2500,
+    categoria: 'Aseo',
+    unidades: 120,
+    marca: 'Dove',
+    idProducto: '26',
+    peso: 0.1,
+    unidadesVendidas: 350,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f34ef940acdd142f82b'),
+    nombre: 'Cerveza Poker',
+    descripcion: 'Cerveza rubia',
+    precio: 2500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Poker',
+    idProducto: '37',
+    peso: 0.3,
+    unidadesVendidas: 600,
+    precioPromedio: 2400
+  }
+    `
+    },
+    "8": {
+        code: `
+    {
+    _id: ObjectId('66f48f4f9e6b59da3e42f807'),
+    nombre: 'Arroz Diana',
+    descripcion: 'Arroz blanco premium',
+    precio: 4000,
+    categoria: 'Alimentos',
+    unidades: 50,
+    marca: 'Diana',
+    idProducto: '1',
+    peso: 1,
+    unidadesVendidas: 300,
+    precioPromedio: 3800
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f808'),
+    nombre: 'Leche Alquería',
+    descripcion: 'Leche entera larga vida',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 80,
+    marca: 'Alquería',
+    idProducto: '2',
+    peso: 1,
+    unidadesVendidas: 500,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f809'),
+    nombre: 'Aceite Premier',
+    descripcion: 'Aceite vegetal para cocinar',
+    precio: 15000,
+    categoria: 'Aceites',
+    unidades: 40,
+    marca: 'Premier',
+    idProducto: '3',
+    peso: 3,
+    unidadesVendidas: 200,
+    precioPromedio: 14500
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f80a'),
+    nombre: 'Papel Higiénico Familia',
+    descripcion: 'Papel higiénico de doble hoja',
+    precio: 12000,
+    categoria: 'Aseo',
+    unidades: 100,
+    marca: 'Familia',
+    idProducto: '4',
+    peso: 0.24,
+    unidadesVendidas: 350,
+    precioPromedio: 11500
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f80b'),
+    nombre: 'Detergente Ariel',
+    descripcion: 'Detergente en polvo para ropa',
+    precio: 25000,
+    categoria: 'Aseo',
+    unidades: 60,
+    marca: 'Ariel',
+    idProducto: '5',
+    peso: 5,
+    unidadesVendidas: 280,
+    precioPromedio: 24000
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f80c'),
+    nombre: 'Pan Bimbo',
+    descripcion: 'Pan de molde blanco',
+    precio: 4500,
+    categoria: 'Alimentos',
+    unidades: 90,
+    marca: 'Bimbo',
+    idProducto: '6',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 4300
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f80d'),
+    nombre: 'Cereal Zucaritas',
+    descripcion: 'Cereal de maíz azucarado',
+    precio: 14000,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: "Kellogg's",
+    idProducto: '7',
+    peso: 1,
+    unidadesVendidas: 200,
+    precioPromedio: 13500
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f80e'),
+    nombre: 'Jugo Hit',
+    descripcion: 'Jugo de frutas tropicales',
+    precio: 2200,
+    categoria: 'Bebidas',
+    unidades: 150,
+    marca: 'Hit',
+    idProducto: '8',
+    peso: 0.5,
+    unidadesVendidas: 450,
+    precioPromedio: 2100
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f80f'),
+    nombre: 'Gaseosa Coca-Cola',
+    descripcion: 'Gaseosa regular',
+    precio: 3500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Coca-Cola',
+    idProducto: '9',
+    peso: 1.5,
+    unidadesVendidas: 600,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f810'),
+    nombre: 'Huevos Kikes',
+    descripcion: 'Huevos frescos',
+    precio: 14000,
+    categoria: 'Alimentos',
+    unidades: 120,
+    marca: 'Kikes',
+    idProducto: '10',
+    peso: 2,
+    unidadesVendidas: 400,
+    precioPromedio: 13500
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f812'),
+    nombre: 'Café Juan Valdez',
+    descripcion: 'Café molido tradicional',
+    precio: 12000,
+    categoria: 'Alimentos',
+    unidades: 60,
+    marca: 'Juan Valdez',
+    idProducto: '12',
+    peso: 0.5,
+    unidadesVendidas: 250,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f813'),
+    nombre: 'Té Lipton',
+    descripcion: 'Té en bolsitas',
+    precio: 5000,
+    categoria: 'Alimentos',
+    unidades: 80,
+    marca: 'Lipton',
+    idProducto: '13',
+    peso: 0.2,
+    unidadesVendidas: 300,
+    precioPromedio: 4800
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f814'),
+    nombre: 'Pasta La Muñeca',
+    descripcion: 'Pasta espagueti tradicional',
+    precio: 2500,
+    categoria: 'Alimentos',
+    unidades: 70,
+    marca: 'La Muñeca',
+    idProducto: '14',
+    peso: 0.5,
+    unidadesVendidas: 230,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f815'),
+    nombre: 'Galletas Saltín Noel',
+    descripcion: 'Galletas saladas',
+    precio: 3500,
+    categoria: 'Alimentos',
+    unidades: 100,
+    marca: 'Saltín Noel',
+    idProducto: '15',
+    peso: 0.3,
+    unidadesVendidas: 350,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f816'),
+    nombre: 'Mantequilla Alpina',
+    descripcion: 'Mantequilla con sal',
+    precio: 9000,
+    categoria: 'Lácteos',
+    unidades: 50,
+    marca: 'Alpina',
+    idProducto: '16',
+    peso: 0.5,
+    unidadesVendidas: 150,
+    precioPromedio: 8800
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f817'),
+    nombre: 'Yogurt Alpina',
+    descripcion: 'Yogurt natural sin azúcar',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 60,
+    marca: 'Alpina',
+    idProducto: '17',
+    peso: 1,
+    unidadesVendidas: 320,
+    precioPromedio: 3400
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f818'),
+    nombre: 'Queso Colanta',
+    descripcion: 'Queso campesino fresco',
+    precio: 12000,
+    categoria: 'Lácteos',
+    unidades: 40,
+    marca: 'Colanta',
+    idProducto: '18',
+    peso: 0.5,
+    unidadesVendidas: 180,
+    precioPromedio: 11800
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f81b'),
+    nombre: 'Frijoles Cosecha',
+    descripcion: 'Frijoles rojos secos',
+    precio: 4000,
+    categoria: 'Alimentos',
+    unidades: 60,
+    marca: 'Cosecha',
+    idProducto: '21',
+    peso: 0.5,
+    unidadesVendidas: 220,
+    precioPromedio: 3900
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f81c'),
+    nombre: 'Sal Refisal',
+    descripcion: 'Sal refinada',
+    precio: 2500,
+    categoria: 'Alimentos',
+    unidades: 90,
+    marca: 'Refisal',
+    idProducto: '22',
+    peso: 1,
+    unidadesVendidas: 400,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f4f9e6b59da3e42f81d'),
+    nombre: 'Cerveza Aguila',
+    descripcion: 'Cerveza lager',
+    precio: 2500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Aguila',
+    idProducto: '23',
+    peso: 0.3,
+    unidadesVendidas: 600,
+    precioPromedio: 2400
+  }
+    `
+    },
+    "9": {
+        code: `
+         {
+    _id: ObjectId('66f48f661f314f046e42f80e'),
+    nombre: 'Jugo Hit',
+    descripcion: 'Jugo de frutas tropicales',
+    precio: 2200,
+    categoria: 'Bebidas',
+    unidades: 150,
+    marca: 'Hit',
+    idProducto: '8',
+    peso: 0.5,
+    unidadesVendidas: 450,
+    precioPromedio: 2100
+  },
+  {
+    _id: ObjectId('66f48f661f314f046e42f81d'),
+    nombre: 'Cerveza Aguila',
+    descripcion: 'Cerveza lager',
+    precio: 2500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Aguila',
+    idProducto: '23',
+    peso: 0.3,
+    unidadesVendidas: 600,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f661f314f046e42f820'),
+    nombre: 'Jabón Dove',
+    descripcion: 'Jabón de baño',
+    precio: 2500,
+    categoria: 'Aseo',
+    unidades: 120,
+    marca: 'Dove',
+    idProducto: '26',
+    peso: 0.1,
+    unidadesVendidas: 350,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f661f314f046e42f827'),
+    nombre: 'Agua Cristal',
+    descripcion: 'Agua embotellada',
+    precio: 1800,
+    categoria: 'Bebidas',
+    unidades: 150,
+    marca: 'Cristal',
+    idProducto: '33',
+    peso: 0.6,
+    unidadesVendidas: 500,
+    precioPromedio: 1700
+  },
+  {
+    _id: ObjectId('66f48f661f314f046e42f82a'),
+    nombre: 'Galletas Oreo',
+    descripcion: 'Galletas de chocolate con crema',
+    precio: 3000,
+    categoria: 'Alimentos',
+    unidades: 150,
+    marca: 'Oreo',
+    idProducto: '36',
+    peso: 0.2,
+    unidadesVendidas: 500,
+    precioPromedio: 2900
+  },
+  {
+    _id: ObjectId('66f48f661f314f046e42f82b'),
+    nombre: 'Cerveza Poker',
+    descripcion: 'Cerveza rubia',
+    precio: 2500,
+    categoria: 'Bebidas',
+    unidades: 200,
+    marca: 'Poker',
+    idProducto: '37',
+    peso: 0.3,
+    unidadesVendidas: 600,
+    precioPromedio: 2400
+  },
+  {
+    _id: ObjectId('66f48f661f314f046e42f82c'),
+    nombre: 'Chocolatina Jet',
+    descripcion: 'Chocolate con leche',
+    precio: 1000,
+    categoria: 'Alimentos',
+    unidades: 300,
+    marca: 'Jet',
+    idProducto: '38',
+    peso: 0.01,
+    unidadesVendidas: 1000,
+    precioPromedio: 950
+  },
+  {
+    _id: ObjectId('66f48f661f314f046e42f82d'),
+    nombre: 'Agua Brisa',
+    descripcion: 'Agua embotellada sin gas',
+    precio: 2000,
+    categoria: 'Bebidas',
+    unidades: 180,
+    marca: 'Brisa',
+    idProducto: '39',
+    peso: 0.6,
+    unidadesVendidas: 450,
+    precioPromedio: 1900
+  }
+      `
+    },
+    "10": {
+        code: `
+        mycompiler_mongodb> 
+mycompiler_mongodb> 
+mycompiler_mongodb> 
+mycompiler_mongodb> 
+mycompiler_mongodb> 
+mycompiler_mongodb> 
+mycompiler_mongodb> 
+mycompiler_mongodb> 
+mycompiler_mongodb> 
+mycompiler_mongodb> {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+mycompiler_mongodb> [
+  {
+    _id: ObjectId('66f48f86fa220b34c742f808'),
+    nombre: 'Leche Alquería',
+    descripcion: 'Leche entera larga vida',
+    precio: 3500,
+    categoria: 'Lácteos',
+    unidades: 40,
+    marca: 'Alquería',
+    idProducto: '2',
+    peso: 1,
+    unidadesVendidas: 500,
+    precioPromedio: 3400
+  }
+      `
+    }
+};
+
+
+// Modal
+const modal = document.getElementById("modal");
+const modalCode = document.getElementById("modal-code");
+const closeModal = document.querySelector(".close");
+
+// Función para abrir el modal
+document.querySelectorAll('.view-more-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+        const cardId = e.target.getAttribute('data-card');
+        console.log(cardId);
+
+        // Configurar código según la tarjeta
+        if (cardId && cardCodeDetails[cardId]) {
+            modalCode.textContent = cardCodeDetails[cardId].code;
+        }
+
+        modal.style.display = "block";
+    });
+});
+
+// Cerrar modal
+closeModal.addEventListener('click', () => {
+    modal.style.display = "none";
+});

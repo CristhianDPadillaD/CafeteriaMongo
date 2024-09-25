@@ -32,13 +32,7 @@
       <h2>Primera Consulta</h2>
       <p>Busca el platillos que se llame Pastel de carne utilizando $eq</p>
       <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu1.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/Resultado1.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="1">Ver consulta</button>
     </div>
     <br>
 
@@ -46,99 +40,51 @@
       <h2>Segunda</h2>
       <p>Busca platillos que su categoría se mayor a bebida utilizando $gt.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu2.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/Resultado2.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="2">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Tercera Consulta</h2>
       <p>Busca los platillos que se demoren mas o igual a 50 minutos con $gte</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu3.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/Resultado3.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="3">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Cuarta Consulta</h2>
       <p>Busca los platillos que tengan menos de 20 disponibles utilizando $lt.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu4.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/Resultado4.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="4">Ver consulta</button>
     </div>
 
 
     <div class="cajatexto">
       <h2>Quinta Consulta</h2>
       <p>Busca los platillos que sean menor o igual a 6 en popularidad empleando $lte.</p>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu5.PNG"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas menu/Resultado5.PNG"></div>
-        </center>
+      <button class="view-more-btn" data-card="5">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Sexta consulta</h2>
       <p>Excluye de la búsqueda los que tienen un nivel bajo de picante utilizando $ne.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu6.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/Resultado6.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="6">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Septima consulta</h2>
       <p>Busca los platillos que tienen entre 200 y 600 calorías utilizan $in.</p>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu7.PNG"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas menu/Resultado7.PNG"></div>
-        </center>
+      <button class="view-more-btn" data-card="7">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Octava Consulta</h2>
       <p>Excluye de la búsqueda los platillos con categorias de plato principal y entrada, empleando $nin.</p>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu8.PNG"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas menu/Resultado8.PNG"></div>
-        </center>
+      <button class="view-more-btn" data-card="8">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>novena Consulta</h2>
       <p>Busca los platillos que su precio es mayor o igual a 20.000 empleando $gte.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu9.PNG"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/Capturas menu/Resultado9.PNG"></div>
-      </center>
+      <button class="view-more-btn" data-card="9">Ver consulta</button>
     </div>
     <div class="cajatexto">
         <h2>Decima Consulta</h2>
@@ -146,13 +92,7 @@
           se hace la consulta para ver que se haya cambiado la disponibilidad, se emplea 
           updateOne para actualizar y $eq para ver la consulta.
         </p>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas menu/ConsultaMenu10.PNG"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/Capturas menu/Resultado10.PNG"></div>
-        </center>
+        <button class="view-more-btn" data-card="10">Ver consulta</button>
       </div>
       
     <div class="cuerpoProductos">
@@ -175,6 +115,50 @@
 <footer>
   <p>© 2024 Nuestra Empresa | Todos los derechos reservados</p>
 </footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <pre class="code-block">
+          <code id="modal-code"></code>
+      </pre>
+  </div>
+</div>
+<script src="script/menu.js"></script>
+
+<script>
+  let currentIndex = 0;
+
+  function showSlide(index) {
+      const slides = document.querySelectorAll('.carousel-images img');
+      const totalSlides = slides.length;
+
+      if (index >= totalSlides) {
+          currentIndex = 0;
+      } else if (index < 0) {
+          currentIndex = totalSlides - 1;
+      } else {
+          currentIndex = index;
+      }
+
+      const offset = -currentIndex * 100;
+      document.getElementById('carouselImages').style.transform = `translateX(${offset}%)`;
+  }
+
+  function nextSlide() {
+      showSlide(currentIndex + 1);
+  }
+
+  function previousSlide() {
+      showSlide(currentIndex - 1);
+  }
+
+  // Cambio automático cada 3 segundos
+  setInterval(() => {
+      nextSlide();
+  }, 3000);
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1Yz6Btw5ySU6sdeZ/3paaI5iPY4b7C8CgoIF0yZhHbM1" crossorigin="anonymous"></script>
 <script>

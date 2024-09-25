@@ -31,13 +31,7 @@
     <div class="cajatexto">
       <h2>Primera Consulta</h2>
       <p>Consulta para buscar hoteles segun su nombre.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/consulta1.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/captura1.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="1">Ver consulta</button>
     </div>
     <br>
 
@@ -45,37 +39,19 @@
       <h2>Segunda</h2>
       <p>Queremos saber cuales son los hoteles de mas de 5 estrellas.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/consulta2.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/captura2.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="2">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Tercera Consulta</h2>
       <p>Para buscar hoteles con un precio mayor o igual a 300000</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/consulta3.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/captura3.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="3">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Cuarta Consulta</h2>
       <p>Esta consulta sirve para encontrar los hoteles con un area menor a 30.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/consulta4.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/captura4.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="4">Ver consulta</button>
     </div>
 
 
@@ -83,75 +59,40 @@
     <div class="cajatexto">
       <h2>Quinta Consulta</h2>
       <p>Con la finalidad de conocer los hoteles con habitaciones capaces de hospedar a 2 personas o menos.</p>
-        <center>
-          <div class="capturas"><img src="Capturas db/capturasHoteles/consulta5.png"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/capturasHoteles/captura5.png"></div>
-        </center>
+      <button class="view-more-btn" data-card="5">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Sexta consulta</h2>
       <p>Con esta consulta filtramos los hoteles que no son de la ciudad de Bogota.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/consulta6.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/captura6.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="6">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Septima consulta</h2>
       <p>Se buscan los hoteles que tengan los ingresos mensuales especificados.</p>
-        <center>
-          <div class="capturas"><img src="Capturas db/capturasHoteles/consulta7.png"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/capturasHoteles/captura7.png"></div>
-        </center>
+      <button class="view-more-btn" data-card="7">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Octava Consulta</h2>
       <p>Se buscan los hoteles que tengan los ingresos mensuales especificados.</p>
-        <center>
-          <div class="capturas"><img src="Capturas db/capturasHoteles/consulta8.png"></div>
-        </center>
-        <br>
-        <center>
-          <div class="capturas"><img src="Capturas db/capturasHoteles/captura8.png"></div>
-        </center>
+      <button class="view-more-btn" data-card="8">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>novena Consulta</h2>
       <p>Esta consulta nos ayuda a filtrar los hoteles de 5 estrellas en Bogota.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/consulta9.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/captura9.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="9">Ver consulta</button>
     </div>
     <div class="cajatexto">
       <h2>Decima Consulta</h2>
       <p>Consulta para eliminar.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/consulta10.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasHoteles/captura10.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="10">Ver consulta</button>
     </div>
+
     <div class="cuerpoProductos">
       <center>
         <a class="botonDB" href="Consultas.html">Volver</a>
@@ -165,6 +106,7 @@
 
   </div>
 
+  <script src="script/hoteles.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -172,6 +114,48 @@
 <footer>
   <p>© 2024 Nuestra Empresa | Todos los derechos reservados</p>
 </footer>
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <pre class="code-block">
+          <code id="modal-code"></code>
+      </pre>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+
+  function showSlide(index) {
+      const slides = document.querySelectorAll('.carousel-images img');
+      const totalSlides = slides.length;
+
+      if (index >= totalSlides) {
+          currentIndex = 0;
+      } else if (index < 0) {
+          currentIndex = totalSlides - 1;
+      } else {
+          currentIndex = index;
+      }
+
+      const offset = -currentIndex * 100;
+      document.getElementById('carouselImages').style.transform = `translateX(${offset}%)`;
+  }
+
+  function nextSlide() {
+      showSlide(currentIndex + 1);
+  }
+
+  function previousSlide() {
+      showSlide(currentIndex - 1);
+  }
+
+  // Cambio automático cada 3 segundos
+  setInterval(() => {
+      nextSlide();
+  }, 3000);
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1Yz6Btw5ySU6sdeZ/3paaI5iPY4b7C8CgoIF0yZhHbM1" crossorigin="anonymous"></script>
 <script>

@@ -31,14 +31,7 @@
     <div class="cajatexto">
       <h2>Primera Consulta</h2>
       <p>Con esta consulta buscamos un producto en especifico.</p>
-
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta1.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura1.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="1">Ver consulta</button>
 
     </div>
     <br>
@@ -47,112 +40,56 @@
       <h2>Segunda Consulta</h2>
       <p>Para saber los productos con un precio mayor a 5000.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta2.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura2.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="2">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Tercera Consulta</h2>
       <p>Para conocer los productos con una disponibilidad mayor o igual a la especificada</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta3.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura3.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="3">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Cuarta Consulta</h2>
       <p>Con esta consulta filtramos los 20 primeros productos.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta4.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura4.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="4">Ver consulta</button>
     </div>
-
-
 
     <div class="cajatexto">
       <h2>Quinta Consulta</h2>
       <p>Esta consulta se utiliza para conocer los productos menores o iguales al peso especificado.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta5.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura5.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="5">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Sexta consulta</h2>
       <p>Con esta consulta se filtran los productos que no han sido venidods 400 veces.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta6.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura6.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="6">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Septima consulta</h2>
       <p>Esta consulta es usada para ver los productos que tienen un precio promedio de 2400 y 3400.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta7.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura7.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="7">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>Octava Consulta</h2>
       <p>Esta consulta es usada para ver los productos que tienen no un precio promedio de 5400 y 2900.</p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta8.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura8.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="8">Ver consulta</button>
     </div>
 
     <div class="cajatexto">
       <h2>novena Consulta</h2>
       <p>Esta consulta filtra los productos que tengan 100 unidades y un precio de 3000.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta9.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura9.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="9">Ver consulta</button>
     </div>
     <div class="cajatexto">
       <h2>Decima Consulta</h2>
       <p>Consulta para editar.
       </p>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/consulta10.png"></div>
-      </center>
-      <br>
-      <center>
-        <div class="capturas"><img src="Capturas db/capturasProductos/captura10.png"></div>
-      </center>
+      <button class="view-more-btn" data-card="10">Ver consulta</button>
     </div>
 
     <div class="cuerpoProductos">
@@ -169,12 +106,24 @@
   </div>
 
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 <footer>
   <p>© 2024 Nuestra Empresa | Todos los derechos reservados</p>
 </footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <pre class="code-block">
+          <code id="modal-code"></code>
+      </pre>
+  </div>
+</div>
+
+<script src="script/productos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoI1Yz6Btw5ySU6sdeZ/3paaI5iPY4b7C8CgoIF0yZhHbM1" crossorigin="anonymous"></script>
 <script>
