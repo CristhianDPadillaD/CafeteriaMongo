@@ -50,4 +50,5 @@ db.productos.insertMany([
 //db.productos.find({ precioPromedio: {$in: [3400, 2400]}});
 //db.productos.find({ precioPromedio: {$nin: [5400, 2900]}});
 //db.productos.find({$and:[{unidades:{$gte:100}}, {precio:{$lte:3000}}]})
-//db.productos.deleteOne({ idProducto: '2'});
+db.productos.updateOne({ idProducto: '2'}, {$set: {unidades: 40 }});
+db.productos.find({idProducto:'2'})
