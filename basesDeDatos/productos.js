@@ -1,0 +1,53 @@
+db.productos.insertMany([
+  { nombre: 'Arroz Diana', descripcion: 'Arroz blanco premium', precio: 4000, categoria: 'Alimentos', unidades: 50, marca: 'Diana', idProducto: '1', peso: 1, unidadesVendidas: 300, precioPromedio: 3800 },
+  { nombre: 'Leche Alquería', descripcion: 'Leche entera larga vida', precio: 3500, categoria: 'Lácteos', unidades: 80, marca: 'Alquería', idProducto: '2', peso: 1, unidadesVendidas: 500, precioPromedio: 3400 },
+  { nombre: 'Aceite Premier', descripcion: 'Aceite vegetal para cocinar', precio: 15000, categoria: 'Aceites', unidades: 40, marca: 'Premier', idProducto: '3', peso: 3, unidadesVendidas: 200, precioPromedio: 14500 },
+  { nombre: 'Papel Higiénico Familia', descripcion: 'Papel higiénico de doble hoja', precio: 12000, categoria: 'Aseo', unidades: 100, marca: 'Familia', idProducto: '4', peso: 0.24, unidadesVendidas: 350, precioPromedio: 11500 },
+  { nombre: 'Detergente Ariel', descripcion: 'Detergente en polvo para ropa', precio: 25000, categoria: 'Aseo', unidades: 60, marca: 'Ariel', idProducto: '5', peso: 5, unidadesVendidas: 280, precioPromedio: 24000 },
+  { nombre: 'Pan Bimbo', descripcion: 'Pan de molde blanco', precio: 4500, categoria: 'Alimentos', unidades: 90, marca: 'Bimbo', idProducto: '6', peso: 1, unidadesVendidas: 320, precioPromedio: 4300 },
+  { nombre: 'Cereal Zucaritas', descripcion: 'Cereal de maíz azucarado', precio: 14000, categoria: 'Alimentos', unidades: 70, marca: 'Kellogg\'s', idProducto: '7', peso: 1, unidadesVendidas: 200, precioPromedio: 13500 },
+  { nombre: 'Jugo Hit', descripcion: 'Jugo de frutas tropicales', precio: 2200, categoria: 'Bebidas', unidades: 150, marca: 'Hit', idProducto: '8', peso: 0.5, unidadesVendidas: 450, precioPromedio: 2100 },
+  { nombre: 'Gaseosa Coca-Cola', descripcion: 'Gaseosa regular', precio: 3500, categoria: 'Bebidas', unidades: 200, marca: 'Coca-Cola', idProducto: '9', peso: 1.5, unidadesVendidas: 600, precioPromedio: 3400 },
+  { nombre: 'Huevos Kikes', descripcion: 'Huevos frescos', precio: 14000, categoria: 'Alimentos', unidades: 120, marca: 'Kikes', idProducto: '10', peso: 2, unidadesVendidas: 400, precioPromedio: 13500 },
+  { nombre: 'Azúcar Manuelita', descripcion: 'Azúcar blanca refinada', precio: 3000, categoria: 'Alimentos', unidades: 90, marca: 'Manuelita', idProducto: '11', peso: 1, unidadesVendidas: 320, precioPromedio: 2900 },
+  { nombre: 'Café Juan Valdez', descripcion: 'Café molido tradicional', precio: 12000, categoria: 'Alimentos', unidades: 60, marca: 'Juan Valdez', idProducto: '12', peso: 0.5, unidadesVendidas: 250, precioPromedio: 11800 },
+  { nombre: 'Té Lipton', descripcion: 'Té en bolsitas', precio: 5000, categoria: 'Alimentos', unidades: 80, marca: 'Lipton', idProducto: '13', peso: 0.2, unidadesVendidas: 300, precioPromedio: 4800 },
+  { nombre: 'Pasta La Muñeca', descripcion: 'Pasta espagueti tradicional', precio: 2500, categoria: 'Alimentos', unidades: 70, marca: 'La Muñeca', idProducto: '14', peso: 0.5, unidadesVendidas: 230, precioPromedio: 2400 },
+  { nombre: 'Galletas Saltín Noel', descripcion: 'Galletas saladas', precio: 3500, categoria: 'Alimentos', unidades: 100, marca: 'Saltín Noel', idProducto: '15', peso: 0.3, unidadesVendidas: 350, precioPromedio: 3400 },
+  { nombre: 'Mantequilla Alpina', descripcion: 'Mantequilla con sal', precio: 9000, categoria: 'Lácteos', unidades: 50, marca: 'Alpina', idProducto: '16', peso: 0.5, unidadesVendidas: 150, precioPromedio: 8800 },
+  { nombre: 'Yogurt Alpina', descripcion: 'Yogurt natural sin azúcar', precio: 3500, categoria: 'Lácteos', unidades: 60, marca: 'Alpina', idProducto: '17', peso: 1, unidadesVendidas: 320, precioPromedio: 3400 },
+  { nombre: 'Queso Colanta', descripcion: 'Queso campesino fresco', precio: 12000, categoria: 'Lácteos', unidades: 40, marca: 'Colanta', idProducto: '18', peso: 0.5, unidadesVendidas: 180, precioPromedio: 11800 },
+  { nombre: 'Atún Van Camps', descripcion: 'Atún en aceite', precio: 5500, categoria: 'Alimentos', unidades: 80, marca: 'Van Camp\'s', idProducto: '19', peso: 0.1, unidadesVendidas: 400, precioPromedio: 5400 },
+  { nombre: 'Lentejas La Lucha', descripcion: 'Lentejas secas', precio: 3000, categoria: 'Alimentos', unidades: 70, marca: 'La Lucha', idProducto: '20', peso: 0.5, unidadesVendidas: 250, precioPromedio: 2900 },
+  { nombre: 'Frijoles Cosecha', descripcion: 'Frijoles rojos secos', precio: 4000, categoria: 'Alimentos', unidades: 60, marca: 'Cosecha', idProducto: '21', peso: 0.5, unidadesVendidas: 220, precioPromedio: 3900 },
+  { nombre: 'Sal Refisal', descripcion: 'Sal refinada', precio: 2500, categoria: 'Alimentos', unidades: 90, marca: 'Refisal', idProducto: '22', peso: 1, unidadesVendidas: 400, precioPromedio: 2400 },
+  { nombre: 'Cerveza Aguila', descripcion: 'Cerveza lager', precio: 2500, categoria: 'Bebidas', unidades: 200, marca: 'Aguila', idProducto: '23', peso: 0.3, unidadesVendidas: 600, precioPromedio: 2400 },
+  { nombre: 'Vino Concha y Toro', descripcion: 'Vino tinto seco', precio: 35000, categoria: 'Bebidas', unidades: 30, marca: 'Concha y Toro', idProducto: '24', peso: 0.7, unidadesVendidas: 150, precioPromedio: 34000 },
+  { nombre: 'Whisky Buchanans', descripcion: 'Whisky escocés', precio: 120000, categoria: 'Bebidas', unidades: 20, marca: 'Buchanans', idProducto: '25', peso: 0.7, unidadesVendidas: 100, precioPromedio: 118000 },
+  { nombre: 'Jabón Dove', descripcion: 'Jabón de baño', precio: 2500, categoria: 'Aseo', unidades: 120, marca: 'Dove', idProducto: '26', peso: 0.1, unidadesVendidas: 350, precioPromedio: 2400 },
+  { nombre: 'Shampoo Head & Shoulders', descripcion: 'Shampoo anticaspa', precio: 12000, categoria: 'Aseo', unidades: 80, marca: 'Head & Shoulders', idProducto: '27', peso: 0.4, unidadesVendidas: 300, precioPromedio: 11500 },
+  { nombre: 'Crema Dental Colgate', descripcion: 'Crema dental blanqueadora', precio: 6500, categoria: 'Aseo', unidades: 100, marca: 'Colgate', idProducto: '28', peso: 0.1, unidadesVendidas: 200, precioPromedio: 6000},
+  { nombre: 'Pañales Huggies', descripcion: 'Pañales etapa 2', precio: 35000, categoria: 'Bebés', unidades: 60, marca: 'Huggies', idProducto: '29', peso: 0.1, unidadesVendidas: 200, precioPromedio: 34000 },
+  { nombre: 'Crema Lubriderm', descripcion: 'Crema hidratante para el cuerpo', precio: 18000, categoria: 'Cuidado personal', unidades: 70, marca: 'Lubriderm', idProducto: '30', peso: 0.4, unidadesVendidas: 150, precioPromedio: 17500 },
+  { nombre: 'Champú Pantene', descripcion: 'Shampoo hidratante', precio: 14000, categoria: 'Cuidado personal', unidades: 60, marca: 'Pantene', idProducto: '31', peso: 0.7, unidadesVendidas: 250, precioPromedio: 13500 },
+  { nombre: 'Café Nescafé', descripcion: 'Café instantáneo clásico', precio: 12000, categoria: 'Alimentos', unidades: 50, marca: 'Nescafé', idProducto: '32', peso: 0.1, unidadesVendidas: 300, precioPromedio: 11800 },
+  { nombre: 'Agua Cristal', descripcion: 'Agua embotellada', precio: 1800, categoria: 'Bebidas', unidades: 150, marca: 'Cristal', idProducto: '33', peso: 0.6, unidadesVendidas: 500, precioPromedio: 1700 },
+  { nombre: 'Papel Toalla Scott', descripcion: 'Papel toalla multiusos', precio: 10000, categoria: 'Aseo', unidades: 60, marca: 'Scott', idProducto: '34', peso: 0.8, unidadesVendidas: 250, precioPromedio: 9800 },
+  { nombre: 'Helado Popsy', descripcion: 'Helado de chocolate', precio: 10000, categoria: 'Alimentos', unidades: 70, marca: 'Popsy', idProducto: '35', peso: 1, unidadesVendidas: 200, precioPromedio: 9800 },
+  { nombre: 'Galletas Oreo', descripcion: 'Galletas de chocolate con crema', precio: 3000, categoria: 'Alimentos', unidades: 150, marca: 'Oreo', idProducto: '36', peso: 0.2, unidadesVendidas: 500, precioPromedio: 2900 },
+  { nombre: 'Cerveza Poker', descripcion: 'Cerveza rubia', precio: 2500, categoria: 'Bebidas', unidades: 200, marca: 'Poker', idProducto: '37', peso: 0.3, unidadesVendidas: 600, precioPromedio: 2400 },
+  { nombre: 'Chocolatina Jet', descripcion: 'Chocolate con leche', precio: 1000, categoria: 'Alimentos', unidades: 300, marca: 'Jet', idProducto: '38', peso: 0.01, unidadesVendidas: 1000, precioPromedio: 950 },
+  { nombre: 'Agua Brisa', descripcion: 'Agua embotellada sin gas', precio: 2000, categoria: 'Bebidas', unidades: 180, marca: 'Brisa', idProducto: '39', peso: 0.6, unidadesVendidas: 450, precioPromedio: 1900 },
+  { nombre: 'Lysol Aerosol', descripcion: 'Desinfectante en aerosol', precio: 12000, categoria: 'Aseo', unidades: 80, marca: 'Lysol', idProducto: '40', peso: 0.2, unidadesVendidas: 300, precioPromedio: 11500 }
+]);
+//db.productos.find({ nombre: {$eq: 'Mantequilla Alpina'}});
+//db.productos.find({ precio: {$gt: 5000}});
+//db.productos.find({ unidades: {$gte: 100}});
+//db.productos.find({ idProducto: {$lt: '20'}});
+//db.productos.find({ peso: {$lte: 1}});
+//db.productos.find({ unidadesVendidas: {$ne: 400}});
+//db.productos.find({ precioPromedio: {$in: [3400, 2400]}});
+//db.productos.find({ precioPromedio: {$nin: [5400, 2900]}});
+//db.productos.find({$and:[{unidades:{$gte:100}}, {precio:{$lte:3000}}]})
+db.productos.updateOne({ idProducto: '2'}, {$set: {unidades: 40 }});
+db.productos.find({idProducto:'2'})
